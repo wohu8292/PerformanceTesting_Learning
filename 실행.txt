@@ -1,0 +1,7 @@
+DOS 모드
+1. cd C:\Users\gjdnd\Desktop\QA\Jmeter 공부\apache-jmeter-5.6.3\bin
+2. java -jar ApacheJMeter.jar
+
+
+GUI 모드 (Grapical user interface)
+1. jmeter.bat 파일 실행

@@ -1,0 +1,10 @@
+huw much memory is utilizing 
+how CPU is behaving
+
+
+yourkit java profiler (it will give param about server resource)
+
+Heap Memory (dynamic memory) is something when java actually allocate some memory when it in runtime
+Garbage Collections will remove that allocations from Heap Memory when work is done
+
+when Heap memory is full, application will get slower.

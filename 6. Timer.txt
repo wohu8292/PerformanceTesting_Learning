@@ -1,0 +1,11 @@
+Where the timer come into picture: users will not simultaneously accept one request
+
+constant timer: sleep 을 추가함				/ sleep 이란 gap between two thread
+2000 miliseconds = delays samplers by 2 second
+(딜레이하고 시간들 확인하려면 view results in table)
+
+gaussian random timer: Deviation 을 sleep 에다 추가함
+Deviation 은 랜덤으로 적용됨
+
+
+throughput timer: how many request you will ask per minute

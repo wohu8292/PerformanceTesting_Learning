@@ -1,0 +1,9 @@
+페이로드에 있는 userSession 은 매번 로그인할때마다 경신됨
+
+correlation: The userSession value whatever you have previously recorded and put will not work
+
+그럴땐 userSession 을 prvious Response 에서 찾아 동적으로 매번 경신되는 request 의 페이로드에 연결시켜줘야함
+
+1. userSession 을 받는 previous sampler 을 추가함
+2. view result Tree 에서 RegExp Tester 모드로 바꾼다음에 발췌해서 regular expression 사용할부분 "(.+?)" 로 바꿔줌
+

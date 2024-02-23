@@ -1,0 +1,38 @@
+what is thread?
+thread is a set of users.
+
+number of threads = 50
+ramp up period = 5							/ 5초동안 각각 초당 10명 접속 ->1loop
+loop count = forever > scheduler > duration				/ loop 설정하거나 지속시간 설정
+
+** lock file config plugin	/plugin manager 다운받은후**
+----------------------------------------------------------------------------
+
+what is Listener?
+kind of report showing result
+before you run listener, try with single thread
+
+1. View Results Tree (most important)
+2. Aggregate Report
+3. Graph Results
+
+---------------------------------
+
+1. View Results Tree
+specific case: green tick mark status 200 and got pass from results tree, but actual response is wrong
+
+---------------------------------
+
+2. Aggregate Report
+-Samples: number of user
+-Throughput: number of request that are processed per time by server (request/time)
+		thread up = throughput up
+		larger throughput is better => keep on increasing more user
+		fixed throughput after increasing number of thread => maximum ability
+-90% line: 90% of samples took no more than this time
+
+----------------------------------
+
+3. Graph Result
+-Deviation: shows exceptional case (deviating)
+-Throughput: ideally throughput should increase as thread increase

@@ -1,0 +1,13 @@
+Header: Headers are meta data (you can provide extra information about the request)
+
+1. Content Type
+2. Authorization details
+3. Response Caching (같은사이트 재방문시 추가로딩없이 콘텐츠 사용 가능)ㅜ
+4. Response Cookies (how to differentiate which file to open, session cookies will be stored in your browser for duration)
+	JMeter 는 쿠키를 브라우저처럼 저장하지 않음 => HTTP Cookie Manager
+
+if you don't give cookie, [no cookies] will be shown in the request body
+you can find cookies from Response Header
+
+
+Body: Body is used by business logic

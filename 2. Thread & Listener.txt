@@ -1,0 +1,6 @@
+what is thread?
+thread is a set of users.
+
+number of threads = 50
+ramp up period = 5							/1초에 10명 접속
+loop count = forever > scheduler > duration

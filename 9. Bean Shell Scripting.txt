@@ -1,0 +1,36 @@
+Pre-processor> BeanShell PreProcessor
+
+there is 3 data types called vars(threadGroup level), ctx(context), prev(hold previous request)
+
+ex)
+
+String newUserName;							/writing data type is not mandatory
+log.info(vars.get("country"));
+log.info(ctx.getThreadNum()+" is the thread number");			/ctx is context, and get current thread num
+prefix = ctx.getThreadNum();
+
+
+String country = vars.get("country");					/get value of variable 
+if(country.equals("china")){
+	newUserName = prefix.toString()+vars.get("username")+"china";
+	vars.put("username", newUserName);
+	log.info("new user name is"+newUserName);
+}
+
+else{
+	newUserName = prefix.toString()+vars.get("username");
+}
+
+
+* thread number starts from the zero
+
+------------------------------------------------------
+
+prev.getResponseCode().toString();
+if(prev.getResponseMessage().contains("unauthorized"){
+	log.info("authentication issue");
+}
+else if(prev.getResponseCode().contains("OK')){
+	log.info("test passed");
+	props.put("result","Pass")			/thread 밖 test plan 의 변수에 접근하고싶다면 props (propertes)
+}

@@ -1,0 +1,26 @@
+Requests Filtering> URL Pattern to Exclude > Add Suggested Excludes		
+(exclude all unnecessary components like gif, banner)
+
+proxy 서버란?
+서버와 client 사이에 데이터를 전달해주는 서버
+Jmeter 을 사용하기위해선 프록시서버의 port number 을 연결해줘야함
+
+https 란?
+tls 를 사용해 암호화된 http 연결을하는 프로토콜, 암호를위해선 certification 이 필요함
+이 certification 은 Jmeter 에서 제공될것
+
+1. open FireFox
+2. go to Setting
+3. search Network
+4. HTTP Proxy: 127.0.0.1	Port: 8888
+5. search Certificate
+6. view Certificate
+7. go to Authorities tap
+8. click import
+9. import Apache Jmeter TemporaryRootCA (from jmeter bin folder)
+
+5. it will work with JMeter
+
+
+Chrome 에서 레코딩은 Blazemeter 플러그인사용할것!
+Blazemeter 은 모든 action 레코딩 한다음에 .jmx 파일로 변환함

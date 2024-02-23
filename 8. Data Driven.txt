@@ -1,0 +1,22 @@
+(Webtour is launched in section 7)
+
+레코딩없이 sample 뽑아내기: 
+
+개발자도구
+1. network tab> Protocol/IP/PortNumber 
+2. Payload 들어가서 복사하고 Add from Clipboard
+
+
+-------------------------------------------------------
+여러개의 payload 를 실행할때:
+
+1. excel 에서 데이터입력후 csv 포맷으로 저장
+	woong1 | denver
+	woong2 | boulder
+2. Config Element> CSV Data Set Config
+	File name: 파일경로
+	Variable names: name.location				/ 컬럼명
+	Recycle on EOF (End of File): 				/ 또쓸꺼면 true, 아니면 false
+	Stop thread on EOF (End of File):			/ 다훑은디 멈출거면 true, 아니면 false
+4. Parameter value 를 regular expression 으로 변경			/ ${name}, ${location}
+

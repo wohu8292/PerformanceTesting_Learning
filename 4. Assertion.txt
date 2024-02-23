@@ -1,0 +1,34 @@
+1.Response Assertion
+2.Size Assertion
+3.Duration Assertion
+
+4.Listener> Assertion Results
+---------------------------------------
+
+1. Response Assertion
+
+text response> contains> add (result tree 에서 assertion 할 응답 확인할것)
+
+you can't manually type response, whereas response code can be typed
+
+if you want to add assertion on childredn request, choose sub-sample
+
+---------------------------------------
+
+2. Size Assertion
+
+how much size of request in byte? (result tree 에서 확인할것)
+
+3000 > (greater than 3000)
+
+if the request can handle 100 requests that means 100* [size in bytes from sampler result] are written by server side
+
+it's problem when response is not with complete size of bytes due to heavy load, so size in bytes shouldn't go down 
+
+----------------------------------------
+
+3. Duration Assertion
+
+Load Test => how much it will take?
+
+Load time 체크 (result tree 에서 확인할것)

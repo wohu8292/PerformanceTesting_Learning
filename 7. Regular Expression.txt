@@ -1,0 +1,10 @@
+우선 Sample(Request) 에서 parameter value 를 $(Username) 과같이 바꿈 
+
+
+Post Processor> Regular Expression Extractor
+
+Name of Created Variable: Username                       Parameter value name 	 
+Regular Expression: take line from response and change the part to (.+?) which will be (replaced)
+Template: $1$				/ put variable to second, then $2$ / put variable to all, then $0$
+Match No: if same multiple regulation is in response, need to give info which one you are gonna use (starts from 1)
+Default value: when JMeter can't find variable from response

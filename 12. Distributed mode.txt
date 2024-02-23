@@ -1,0 +1,14 @@
+When you do load testing on the day like black friday,
+it's not recommandable to use many users on one single machine.
+
+
+
+JMeter GUI(Master) -> JMeter Server(Slaves which has multiple traffics) -> Site
+
+
+steps
+
+1. bin> jmeter properties> 
+	- uncomment "server.rmi.ssl.disabled=true"
+	- change remote host address from master to slave (bin> jmeter server> check IP address {end point} of slave)
+2. start jmeter> start by clicking (run> remotre start> IP)
